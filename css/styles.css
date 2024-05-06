@@ -1,0 +1,185 @@
+:root{
+    --color-a: red;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 3rem 0 0 0;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.one-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    
+}
+
+.bd-container{
+    max-width: 1200px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+
+.nav{
+    height: 3rem;
+}
+
+.bd-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.nav__list{
+    margin: 3rem 0 0 3rem ;
+}
+
+li.nav__item{
+    margin-bottom: 2rem;
+}
+
+a.nav__link:hover{
+    border-bottom: 2px solid white;
+
+}
+a.home__click{
+    display: inline-block;
+    width: 70px;
+    line-height: 25px;
+    height: 25px;
+    text-align: center;
+    margin-top: 1rem;
+   
+    color: white;
+    background-color: green;
+    border-radius: 9px;
+}
+
+
+
+
+
+.home{
+    height: calc(100vh - 3rem);
+    
+}
+
+.bd-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    
+}
+
+.home__social{
+    
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+.myworld{
+    display: inline-block;
+    margin-top: 3rem;
+    font-weight: bold;
+    rotate: -90deg;
+    border-bottom: 1px solid black;
+}
+.icon{
+    margin-right: 1rem;
+    margin-top: 2rem;
+    
+}
+
+
+@media screen and (min-width:768px) {
+    .home{
+        margin-top: 7rem;
+    }
+
+    .bd-grid{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .menu-toggle{
+        display: none;
+    }
+    .nav__list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav__item{
+        margin-right: 1.5rem;
+    }
+    .nav__link{
+        color: black;
+    }
+   
+    
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .nav__menu{
+        position: fixed;
+        top: 3rem;
+        right: -100%;
+        background: black;
+        width: 60%;
+        height: 100vh;
+        transition: .7s;
+    }
+    .bd-grid{
+        grid-template-rows: 1fr 1fr ;
+        
+    }
+    .home__img{
+        
+        justify-self: center;
+    }
+
+    .image{
+        margin-top: 3rem;
+    }
+    .home{
+        margin-top: 4rem;
+    }
+}
+
+.show{
+    right: 0;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+    .bd-container{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+}
